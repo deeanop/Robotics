@@ -1,0 +1,35 @@
+revoluteJoint R1{
+    Rz.Physical.Mechanical.TranslationalMotion = none;
+    Rz.Physical.Mechanical.RotationAxis = [0 0 1];
+    Rz.Physical.Mechanical.SpringDamper.Torque.stiffness = 1.745e6;
+    Rz.Physical.Mechanical.SpringDamper.Torque.damping = 1745.0;
+    Rz.Physical.Mechanical.SpringDamper.Torque.transitionRegionWidth = 0.001745;
+    Rz.PrescribedMotion = {
+        type = rotational;
+        axis = [0 0 1];
+        motion = "workspace";
+    };
+}
+prismaticJoint P1{
+    Pz.Physical.Mechanical.Rotation = none;
+    Pz.Physical.Mechanical.TranslationAxis = [0 0 1];
+    Pz.PrescribedMotion = {
+        type = translational;
+        axis = [0 0 1];
+        motion = "workspace";
+    };
+}
+revoluteJoint R2{
+    Rz.Physical.Mechanical.TransitionalMotion = none;
+    Rz.Physical.Mechanical.RotationAxis = [0 0 1];
+    Rz.Physical.Mechanical.SpringDamper.Torque.stiffness = 1.745e6;
+    Rz.Physical.Mechanical.SpringDamper.Torque.damping = 1745.0;
+    Rz.Physical.Mechanical.SpringDamper.Torque.transitionRegionWidth = 0.001745;
+    Rz.PrescribedMotion = {
+        type = rotational;
+        axis = [0 0 1];
+        motion = "workspace";
+    };
+}
+prismaticJoint P2{
+    
